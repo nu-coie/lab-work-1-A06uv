@@ -3,26 +3,19 @@
 
 int main(void)
 {
-    // Step ( 1 ) : Prompt the user for Pyramid Size
+    int a = get_int("a=");
+    for(int i=0;i<=a;i++)
+    {
+        for(int j=0;j<i;j++)
+        {
+        printf("#");
 
-    
-
-    // Step ( 2 ) : Draw the Pyramid (Hint* : Use nested for loop)
-     
-}
-
-
-
-
-/*
-
-This is what the output should look like. :
-./pyramid
-Size: 4
-   #
-  ##
- ###
-####
+        }
+printf("\n");
 
 
-*/
+
+
+
+
+    }}
