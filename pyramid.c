@@ -4,9 +4,9 @@
 int main(void)
 {
     int a = get_int("a=");
-    for(int i=0;i<=a,i++)
+    for(int i=0;i<=a;i++)
     {
-        for(int j=o;j<i,j++)
+        for(int j=0;j<i;j++)
         printf("#");
 
     }
