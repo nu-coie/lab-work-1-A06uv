@@ -1,9 +1,3 @@
-#include <stdio.h>
-#include <cs50.h>
-
-
-int main(void)
-{
 #include <iostream>
 #include "cs50.h"
 
@@ -50,9 +44,4 @@ int main()
     }
 
     return 0;
-}
-
-
-
-
 }
