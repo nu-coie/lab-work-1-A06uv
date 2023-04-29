@@ -1,45 +1,43 @@
-#include <iostream>
+#include <stdio.h>
 #include "cs50.h"
-
-using namespace std;
 
 int main()
 {
     int num1, num2;
     char op;
 
-    cout << "Enter first number: ";
-    num1 = get_int();
+    printf("Enter first number: ");
+    scanf("%d", &num1);
 
-    cout << "Enter second number: ";
-    num2 = get_int();
+    printf("Enter second number: ");
+    scanf("%d", &num2);
 
-    cout << "Enter operation (+, -, *, /): ";
+    printf("Enter operation (+, -, *, /): ");
     op = get_char();
 
     switch(op)
     {
         case '+':
-            cout << num1 << " + " << num2 << " = " << num1 + num2 << endl;
+            printf("%d + %d = %d\n", num1, num2, num1 + num2);
             break;
         case '-':
-            cout << num1 << " - " << num2 << " = " << num1 - num2 << endl;
+            printf("%d - %d = %d\n", num1, num2, num1 - num2);
             break;
         case '*':
-            cout << num1 << " * " << num2 << " = " << num1 * num2 << endl;
+            printf("%d * %d = %d\n", num1, num2, num1 * num2);
             break;
         case '/':
             if(num2 == 0)
             {
-                cout << "Error: Cannot divide by zero." << endl;
+                printf("Error: Cannot divide by zero.\n");
             }
             else
             {
-                cout << num1 << " / " << num2 << " = " << num1 / num2 << endl;
+                printf("%d / %d = %d\n", num1, num2, num1 / num2);
             }
             break;
         default:
-            cout << "Error: Invalid operation." << endl;
+            printf("Error: Invalid operation.\n");
             break;
     }
 
